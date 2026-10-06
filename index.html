@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sebin Stanley — Cloud & DevOps Engineer. Cloud infrastructure, DevOps, Linux, AWS, Azure and automation services." />
+  <title>Sebin Stanley | Cloud & DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Sebin Stanley home">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>SEBIN STANLEY</strong>
+          <small>Cloud & DevOps Engineer</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-link" href="https://github.com/sebin31" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/sebin-stanley-812951218/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="btn btn-primary btn-small" href="#booking">Book a Session</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> CLOUD • DEVOPS • AUTOMATION • SCALABILITY</div>
+          <h1>Build. Deploy.<br><em>Automate.</em></h1>
+          <p class="hero-role">Cloud & DevOps Engineer</p>
+          <p class="hero-text">
+            I build, deploy and manage reliable cloud infrastructure, automate deployments,
+            and solve real-world infrastructure challenges using AWS, Azure, Linux and modern DevOps tools.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View My Projects <span>→</span></a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>5+</strong><span>Projects</span></div>
+            <div><strong>AWS</strong><span>Certified</span></div>
+            <div><strong>∞</strong><span>Learning</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">sebin@cloud: ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="output">sebin-stanley</p>
+              <p><span class="prompt">$</span> cat role.txt</p>
+              <p class="output">Cloud & DevOps Engineer</p>
+              <p><span class="prompt">$</span> ./deploy --stack cloud</p>
+              <p class="output success">✓ infrastructure ready</p>
+              <p><span class="prompt">$</span> echo "Always Learning..."<span class="cursor">▌</span></p>
+            </div>
+          </div>
+
+          <div class="infra-orbit">
+            <div class="cloud-icon">☁</div>
+            <div class="orbit-card aws">AWS</div>
+            <div class="orbit-card azure">AZURE</div>
+            <div class="orbit-card docker">DOCKER</div>
+            <div class="orbit-card linux">LINUX</div>
+            <div class="orbit-card tf">TERRAFORM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 / ABOUT</span>
+          <h2>Infrastructure that works <em>for you.</em></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I focus on practical cloud and infrastructure solutions — from Linux server setup
+            and Docker deployments to AWS/Azure infrastructure, Nginx, SSL and automation.
+          </p>
+          <p>
+            My approach is simple: understand the requirement, build a clean solution,
+            document it properly, and leave the system easier to maintain.
+          </p>
+          <div class="mini-points">
+            <span>✓ Reliable deployments</span>
+            <span>✓ Security-minded setup</span>
+            <span>✓ Clear documentation</span>
+            <span>✓ Practical automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">02 / TECHNICAL STACK</span>
+          <h2>Tools I work with</h2>
+          <p>Cloud, infrastructure, automation and development technologies.</p>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <article class="skill-card reveal" data-skill="cloud"><span class="skill-icon">☁</span><h3>AWS</h3><p>EC2 · S3 · IAM · VPC · RDS · CloudWatch</p></article>
+          <article class="skill-card reveal" data-skill="cloud"><span class="skill-icon">A</span><h3>Azure</h3><p>VMs · VNet · Blob Storage · App Services</p></article>
+          <article class="skill-card reveal" data-skill="devops"><span class="skill-icon">◈</span><h3>Docker</h3><p>Containers · Compose · Networks · Deployments</p></article>
+          <article class="skill-card reveal" data-skill="linux"><span class="skill-icon">⌘</span><h3>Linux</h3><p>Ubuntu · Server administration · Troubleshooting</p></article>
+          <article class="skill-card reveal" data-skill="devops"><span class="skill-icon">↗</span><h3>CI/CD</h3><p>Deployment automation · Git · Pipelines</p></article>
+          <article class="skill-card reveal" data-skill="devops"><span class="skill-icon">T</span><h3>Terraform</h3><p>Infrastructure as Code · Repeatable infrastructure</p></article>
+          <article class="skill-card reveal" data-skill="linux"><span class="skill-icon">N</span><h3>Nginx</h3><p>Reverse proxy · SSL · Web deployment</p></article>
+          <article class="skill-card reveal" data-skill="development"><span class="skill-icon">{ }</span><h3>Python</h3><p>Automation · APIs · Data and scripting</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="projects">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">03 / PROJECTS</span>
+          <h2>Selected work</h2>
+          <p>Examples of cloud, server and DevOps work.</p>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="cloud">Cloud</button>
+          <button class="filter" data-filter="devops">DevOps</button>
+          <button class="filter" data-filter="linux">Linux</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="cloud devops">
+            <div class="project-top"><span class="project-number">01</span><span class="tag">Cloud</span></div>
+            <h3>Multi-Service Cloud Deployment</h3>
+            <p>Containerized multi-service deployment with Docker, Nginx, SSL, APIs and separate environments.</p>
+            <div class="project-stack"><span>Docker</span><span>Nginx</span><span>Linux</span><span>Azure</span></div>
+            <button class="text-btn project-details" data-title="Multi-Service Cloud Deployment" data-description="A multi-service cloud deployment involving Docker containers, Nginx reverse proxying, HTTPS, health checks, environment-specific services and operational troubleshooting.">View details →</button>
+          </article>
+
+          <article class="project-card reveal" data-category="linux devops">
+            <div class="project-top"><span class="project-number">02</span><span class="tag">Linux</span></div>
+            <h3>Ubuntu Server Deployment</h3>
+            <p>Configured Linux infrastructure with Docker, Nginx, SSL, Python tooling, disks and service management.</p>
+            <div class="project-stack"><span>Ubuntu</span><span>Docker</span><span>Nginx</span><span>SSL</span></div>
+            <button class="text-btn project-details" data-title="Ubuntu Server Deployment" data-description="Server setup and operational work including storage, Docker, Nginx, SSL certificates, Python environments, service checks and deployment troubleshooting.">View details →</button>
+          </article>
+
+          <article class="project-card reveal" data-category="cloud">
+            <div class="project-top"><span class="project-number">03</span><span class="tag">AWS</span></div>
+            <h3>Cloud Infrastructure Projects</h3>
+            <p>Hands-on AWS infrastructure using core services for compute, storage, networking, security and monitoring.</p>
+            <div class="project-stack"><span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span></div>
+            <button class="text-btn project-details" data-title="AWS Cloud Infrastructure" data-description="Hands-on AWS work across EC2, S3, IAM, VPC, RDS and CloudWatch with a focus on practical deployment and infrastructure fundamentals.">View details →</button>
+          </article>
+        </div>
+
+        <div class="github-cta reveal">
+          <span>More projects and code are available on GitHub.</span>
+          <a class="btn btn-secondary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">Open GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">04 / SERVICES & PRICING</span>
+          <h2>Need help with your infrastructure?</h2>
+          <p>Transparent starting prices. Final pricing is based on your actual requirements and project scope.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">☁</div><span class="service-label">CLOUD</span>
+            <h3>AWS Cloud Setup</h3><p>EC2, S3, IAM, VPC, security basics and deployment assistance.</p>
+            <div class="price">From <strong>₹2,500</strong></div>
+            <button class="btn btn-outline service-book" data-service="AWS Cloud Setup">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">A</div><span class="service-label">CLOUD</span>
+            <h3>Azure VM Setup</h3><p>Virtual machines, networking, access configuration and deployment.</p>
+            <div class="price">From <strong>₹2,500</strong></div>
+            <button class="btn btn-outline service-book" data-service="Azure VM Setup">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">◈</div><span class="service-label">DEVOPS</span>
+            <h3>Docker Deployment</h3><p>Dockerfiles, Compose, networking and production-oriented deployment.</p>
+            <div class="price">From <strong>₹2,000</strong></div>
+            <button class="btn btn-outline service-book" data-service="Docker Deployment">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">⌘</div><span class="service-label">LINUX</span>
+            <h3>Linux Server Setup</h3><p>Server configuration, users, packages, security basics and services.</p>
+            <div class="price">From <strong>₹2,000</strong></div>
+            <button class="btn btn-outline service-book" data-service="Linux Server Setup">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">N</div><span class="service-label">WEB / SSL</span>
+            <h3>Nginx + SSL Setup</h3><p>Reverse proxy, domain routing, HTTPS and deployment configuration.</p>
+            <div class="price">From <strong>₹1,500</strong></div>
+            <button class="btn btn-outline service-book" data-service="Nginx + SSL Setup">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">↗</div><span class="service-label">AUTOMATION</span>
+            <h3>CI/CD Pipeline</h3><p>Automated build, deployment and repeatable release workflows.</p>
+            <div class="price">From <strong>₹3,500</strong></div>
+            <button class="btn btn-outline service-book" data-service="CI/CD Pipeline">Book This Service</button>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">T</div><span class="service-label">IAC</span>
+            <h3>Terraform Infrastructure</h3><p>Infrastructure as Code for repeatable and maintainable environments.</p>
+            <div class="price">From <strong>₹4,000</strong></div>
+            <button class="btn btn-outline service-book" data-service="Terraform Infrastructure">Book This Service</button>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="featured-badge">POPULAR</div>
+            <div class="service-icon">◉</div><span class="service-label">CONSULTATION</span>
+            <h3>Cloud Consultation</h3><p>Discuss AWS, Azure, Linux, Docker, DevOps, deployment or infrastructure requirements.</p>
+            <div class="price"><strong>₹750</strong> <span>· 1 hour</span></div>
+            <small class="price-note">Final project/service pricing will be decided after discussing your requirements.</small>
+            <button class="btn btn-primary full service-book" data-service="Cloud Consultation">Book a Session</button>
+          </article>
+        </div>
+
+        <div class="pricing-note reveal">
+          <strong>Important:</strong> Service prices are starting prices. Your final quote will be discussed after understanding the scope, infrastructure, urgency and complexity of the project.
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section soft" id="booking">
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <span class="section-kicker">05 / BOOK A SESSION</span>
+          <h2>Let's discuss your <em>project.</em></h2>
+          <p>Choose a service, tell me what you need, and request a convenient time. I'll review the details and contact you to confirm the session and pricing.</p>
+          <div class="booking-points">
+            <div><span>01</span><p>Select the service</p></div>
+            <div><span>02</span><p>Choose a preferred date & time</p></div>
+            <div><span>03</span><p>Discuss scope and final pricing</p></div>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm">
+          <div class="form-row">
+            <label>Full name<input required name="name" type="text" placeholder="Your name"></label>
+            <label>Email<input required name="email" type="email" placeholder="you@example.com"></label>
+          </div>
+          <label>Company / Project<input name="company" type="text" placeholder="Optional"></label>
+          <label>Service
+            <select required name="service" id="serviceSelect">
+              <option value="">Choose a service</option>
+              <option>AWS Cloud Setup</option>
+              <option>Azure VM Setup</option>
+              <option>Docker Deployment</option>
+              <option>Linux Server Setup</option>
+              <option>Nginx + SSL Setup</option>
+              <option>CI/CD Pipeline</option>
+              <option>Terraform Infrastructure</option>
+              <option>Cloud Consultation</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Preferred date<input required name="date" type="date" id="dateInput"></label>
+            <label>Preferred time<input required name="time" type="time"></label>
+          </div>
+          <label>Tell me about your requirement<textarea required name="message" rows="5" placeholder="What are you trying to deploy, fix or build?"></textarea></label>
+          <button class="btn btn-primary full" type="submit">Request Booking <span>→</span></button>
+          <p class="form-note">Submitting opens your email client with the booking details. No payment is taken on this form.</p>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="section-kicker">06 / CONTACT</span>
+          <h2>Have an infrastructure challenge?</h2>
+          <p>Tell me what you're working on. We can discuss the requirements before deciding the final service and payment.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://cal.com/sebin-tjubgh/cloud-consultation" target="_blank">Email Me</a>
+          <a class="btn btn-secondary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Sebin Stanley</span>
+      <span>Cloud & DevOps Engineer</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <span class="section-kicker">PROJECT DETAILS</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <a class="btn btn-primary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">View GitHub →</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
