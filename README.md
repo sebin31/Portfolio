@@ -96,6 +96,20 @@ Highlights:
 - Used an Elastic IP for the server.
 
 ---
+### Multi-Service Cloud Deployment
+
+**Type:** Professional DevOps Work
+
+**Technologies:** Docker · Linux · Nginx · Cloud Infrastructure
+
+**Highlights:**
+- Contributed to deployment and maintenance of a multi-service application environment.
+- Worked with Docker-based application deployments.
+- Configured Nginx reverse proxy and HTTPS/SSL.
+- Performed service health checks and deployment troubleshooting.
+- Supported environment-specific deployments and operational maintenance.
+
+> Professional project — source code and internal implementation details are not publicly available due to company confidentiality.
 
 ### AWS Cloud Infrastructure Deployment
 
