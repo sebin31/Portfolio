@@ -154,86 +154,182 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal" data-category="cloud devops">
-            <div class="project-top"><span class="project-number">01</span><span class="tag">Cloud</span></div>
-            <h3>Multi-Service Cloud Deployment</h3>
-            <p>Containerized multi-service deployment with Docker, Nginx, SSL, APIs and separate environments.</p>
-            <div class="project-stack"><span>Docker</span><span>Nginx</span><span>Linux</span><span>Azure</span></div>
-            <button class="text-btn project-details" data-title="Multi-Service Cloud Deployment" data-description="A multi-service cloud deployment involving Docker containers, Nginx reverse proxying, HTTPS, health checks, environment-specific services and operational troubleshooting.">View details →</button>
-          </article>
 
-          <article class="project-card reveal" data-category="linux devops">
-            <div class="project-top"><span class="project-number">02</span><span class="tag">Linux</span></div>
-            <h3>Ubuntu Server Deployment</h3>
-            <p>Configured Linux infrastructure with Docker, Nginx, SSL, Python tooling, disks and service management.</p>
-            <div class="project-stack"><span>Ubuntu</span><span>Docker</span><span>Nginx</span><span>SSL</span></div>
-            <button class="text-btn project-details" data-title="Ubuntu Server Deployment" data-description="Server setup and operational work including storage, Docker, Nginx, SSL certificates, Python environments, service checks and deployment troubleshooting.">View details →</button>
-          </article>
-
-          <article class="project-card reveal" data-category="cloud">
-            <div class="project-top"><span class="project-number">03</span><span class="tag">AWS</span></div>
-            <h3>Cloud Infrastructure Projects</h3>
-            <p>Hands-on AWS infrastructure using core services for compute, storage, networking, security and monitoring.</p>
-            <div class="project-stack"><span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span></div>
-            <button class="text-btn project-details" data-title="AWS Cloud Infrastructure" data-description="Hands-on AWS work across EC2, S3, IAM, VPC, RDS and CloudWatch with a focus on practical deployment and infrastructure fundamentals.">View details →</button>
-          </article>
-          
-          <article class="project-card reveal" data-category="devops">
+  <!-- 01 — Multi-Service Cloud Deployment -->
+  <article class="project-card reveal" data-category="cloud devops">
     <div class="project-top">
-        <span class="project-number">04</span>
-        <span class="tag">DevOps</span>
+      <span class="project-number">01</span>
+      <span class="tag">Cloud</span>
+    </div>
+
+    <h3>Multi-Service Cloud Deployment</h3>
+
+    <p>
+      Professional DevOps work involving multi-service application deployment,
+      Docker containerization, Nginx reverse proxy, SSL/HTTPS, health checks
+      and production troubleshooting.
+    </p>
+
+    <div class="project-stack">
+      <span>Docker</span>
+      <span>Nginx</span>
+      <span>Linux</span>
+      <span>Cloud</span>
+      <span>CI/CD</span>
+    </div>
+
+    <button
+      class="text-btn project-details"
+      data-title="Multi-Service Cloud Deployment"
+      data-description="Professional DevOps work involving multi-service application deployment, Docker containerization, Nginx reverse proxying, SSL/HTTPS, health checks, environment-specific services and production troubleshooting. Source code and internal implementation details are not publicly available due to company confidentiality."
+    >
+      View details →
+    </button>
+  </article>
+
+
+  <!-- 02 — Ubuntu Server Deployment -->
+  <article class="project-card reveal" data-category="linux devops">
+    <div class="project-top">
+      <span class="project-number">02</span>
+      <span class="tag">Linux</span>
+    </div>
+
+    <h3>Ubuntu Server Deployment</h3>
+
+    <p>
+      Configured Linux infrastructure with Docker, Nginx, SSL, Python tooling,
+      disks and service management.
+    </p>
+
+    <div class="project-stack">
+      <span>Ubuntu</span>
+      <span>Docker</span>
+      <span>Nginx</span>
+      <span>SSL</span>
+    </div>
+
+    <button
+      class="text-btn project-details"
+      data-title="Ubuntu Server Deployment"
+      data-description="Server setup and operational work including storage, Docker, Nginx, SSL certificates, Python environments, service checks and deployment troubleshooting."
+    >
+      View details →
+    </button>
+  </article>
+
+
+  <!-- 03 — AWS Cloud Infrastructure -->
+  <article class="project-card reveal" data-category="cloud">
+    <div class="project-top">
+      <span class="project-number">03</span>
+      <span class="tag">AWS</span>
+    </div>
+
+    <h3>AWS Cloud Infrastructure Deployment</h3>
+
+    <p>
+      Hands-on AWS infrastructure using core services for compute, storage,
+      networking, security and monitoring.
+    </p>
+
+    <div class="project-stack">
+      <span>EC2</span>
+      <span>S3</span>
+      <span>IAM</span>
+      <span>VPC</span>
+    </div>
+
+    <button
+      class="text-btn project-details"
+      data-title="AWS Cloud Infrastructure Deployment"
+      data-description="Hands-on AWS work across EC2, S3, IAM, VPC, RDS and CloudWatch with a focus on practical deployment and infrastructure fundamentals."
+    >
+      View details →
+    </button>
+  </article>
+
+
+  <!-- 04 — Mini DEV -->
+  <article class="project-card reveal" data-category="devops">
+    <div class="project-top">
+      <span class="project-number">04</span>
+      <span class="tag">DevOps</span>
     </div>
 
     <h3>Mini DEV — Full-Stack DevOps Environment</h3>
 
     <p>
-        A full-stack development environment focused on containerization,
-        deployment workflows and practical DevOps infrastructure.
+      Containerized Angular, ASP.NET Core and PostgreSQL stack on AWS EC2,
+      with a self-hosted GitHub Actions pipeline that runs health checks
+      and rolls back automatically. The infrastructure is recreated in
+      Terraform and mirrored on Kubernetes (Minikube).
     </p>
 
     <div class="project-stack">
-        <span>Docker</span>
-        <span>Linux</span>
-        <span>DevOps</span>
-        <span>Git</span>
+      <span>Docker</span>
+      <span>Terraform</span>
+      <span>Kubernetes</span>
+      <span>GitHub Actions</span>
+      <span>AWS</span>
     </div>
 
-    <a class="text-btn"
-       href="https://github.com/sebin31/mini-dev"
-       target="_blank"
-       rel="noreferrer">
-        View Project →
-    </a>
-</article>
+    <div class="project-links">
+      <a
+        class="text-btn"
+        href="https://github.com/sebin31/mini-dev"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Main Repo →
+      </a>
+
+      <a
+        class="text-btn"
+        href="https://github.com/sebin31/mini-dev-k8s"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Kubernetes Repo →
+      </a>
+    </div>
+  </article>
 
 
-<article class="project-card reveal" data-category="cloud devops">
+  <!-- 05 — MyWeatherApi -->
+  <article class="project-card reveal" data-category="cloud devops">
     <div class="project-top">
-        <span class="project-number">05</span>
-        <span class="tag">Cloud</span>
+      <span class="project-number">05</span>
+      <span class="tag">DevOps</span>
     </div>
 
     <h3>MyWeatherApi</h3>
 
     <p>
-        A weather API project demonstrating backend API development,
-        data handling and deployment-oriented development practices.
+      .NET Web API containerized with Docker and deployed to AWS EC2 through
+      a GitHub Actions CI/CD pipeline, with an Nginx reverse proxy and
+      an Elastic IP.
     </p>
 
     <div class="project-stack">
-        <span>Python</span>
-        <span>REST API</span>
-        <span>Git</span>
+      <span>.NET</span>
+      <span>Docker</span>
+      <span>GitHub Actions</span>
+      <span>AWS EC2</span>
+      <span>Nginx</span>
     </div>
 
-    <a class="text-btn"
-       href="https://github.com/sebin31/myweatherapi"
-       target="_blank"
-       rel="noreferrer">
-        View Project →
+    <a
+      class="text-btn"
+      href="https://github.com/sebin31/myweatherapi"
+      target="_blank"
+      rel="noreferrer"
+    >
+      View Project →
     </a>
-</article>
-        </div>
+  </article>
+
+</div>
 
         <div class="github-cta reveal">
           <span>More projects and code are available on GitHub.</span>
@@ -254,49 +350,49 @@
           <article class="service-card reveal">
             <div class="service-icon">☁</div><span class="service-label">CLOUD</span>
             <h3>AWS Cloud Setup</h3><p>EC2, S3, IAM, VPC, security basics and deployment assistance.</p>
-            <div class="price">From <strong>₹2,500</strong></div>
+            <div class="price">From <strong>$30</strong></div>
             <button class="btn btn-outline service-book" data-service="AWS Cloud Setup">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">A</div><span class="service-label">CLOUD</span>
             <h3>Azure VM Setup</h3><p>Virtual machines, networking, access configuration and deployment.</p>
-            <div class="price">From <strong>₹2,500</strong></div>
+            <div class="price">From <strong>$30</strong></div>
             <button class="btn btn-outline service-book" data-service="Azure VM Setup">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">◈</div><span class="service-label">DEVOPS</span>
             <h3>Docker Deployment</h3><p>Dockerfiles, Compose, networking and production-oriented deployment.</p>
-            <div class="price">From <strong>₹2,000</strong></div>
+            <div class="price">From <strong>$25</strong></div>
             <button class="btn btn-outline service-book" data-service="Docker Deployment">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">⌘</div><span class="service-label">LINUX</span>
             <h3>Linux Server Setup</h3><p>Server configuration, users, packages, security basics and services.</p>
-            <div class="price">From <strong>₹2,000</strong></div>
+            <div class="price">From <strong>$25</strong></div>
             <button class="btn btn-outline service-book" data-service="Linux Server Setup">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">N</div><span class="service-label">WEB / SSL</span>
             <h3>Nginx + SSL Setup</h3><p>Reverse proxy, domain routing, HTTPS and deployment configuration.</p>
-            <div class="price">From <strong>₹1,500</strong></div>
+            <div class="price">From <strong>$20</strong></div>
             <button class="btn btn-outline service-book" data-service="Nginx + SSL Setup">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">↗</div><span class="service-label">AUTOMATION</span>
             <h3>CI/CD Pipeline</h3><p>Automated build, deployment and repeatable release workflows.</p>
-            <div class="price">From <strong>₹3,500</strong></div>
+            <div class="price">From <strong>$40</strong></div>
             <button class="btn btn-outline service-book" data-service="CI/CD Pipeline">Book This Service</button>
           </article>
 
           <article class="service-card reveal">
             <div class="service-icon">T</div><span class="service-label">IAC</span>
             <h3>Terraform Infrastructure</h3><p>Infrastructure as Code for repeatable and maintainable environments.</p>
-            <div class="price">From <strong>₹4,000</strong></div>
+            <div class="price">From <strong>$50</strong></div>
             <button class="btn btn-outline service-book" data-service="Terraform Infrastructure">Book This Service</button>
           </article>
 
@@ -304,7 +400,7 @@
             <div class="featured-badge">POPULAR</div>
             <div class="service-icon">◉</div><span class="service-label">CONSULTATION</span>
             <h3>Cloud Consultation</h3><p>Discuss AWS, Azure, Linux, Docker, DevOps, deployment or infrastructure requirements.</p>
-            <div class="price"><strong>₹750</strong> <span>· 1 hour</span></div>
+            <div class="price"><strong>$15</strong> <span>· 1 hour</span></div>
             <small class="price-note">Final project/service pricing will be decided after discussing your requirements.</small>
             <button class="btn btn-primary full service-book" data-service="Cloud Consultation">Book a Session</button>
           </article>

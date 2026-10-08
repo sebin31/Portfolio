@@ -88,3 +88,10 @@ footer{padding:25px 0;border-top:1px solid var(--line);background:#fff}.footer-w
 .reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:1000px){.nav{display:none}.nav.open{display:flex;position:absolute;top:76px;left:20px;right:20px;background:#fff;border:1px solid var(--line);padding:18px;border-radius:15px;flex-direction:column;box-shadow:var(--shadow)}.menu-toggle{display:block;margin-left:auto}.nav-actions{display:none}.hero-grid,.booking-grid,.two-col{grid-template-columns:1fr;gap:40px}.hero-visual{min-height:470px}.skills-grid,.services-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr 1fr}.brand{min-width:auto}}
 @media(max-width:650px){.container{width:min(100% - 28px,1160px)}.section{padding:70px 0}.hero{padding-top:60px}.hero h1{font-size:54px}.hero-buttons{flex-direction:column;align-items:stretch}.hero-stats div{padding:0 14px}.hero-visual{min-height:450px}.terminal-card{width:100%;top:0}.infra-orbit{width:300px;height:300px;bottom:0;left:50%;transform:translateX(-50%)}.cloud-icon{width:76px;height:76px;font-size:35px}.orbit-card{font-size:8px;padding:7px 9px}.aws{left:8px}.azure{right:8px}.docker{left:0}.linux{right:0}.tf{bottom:-12px}.skills-grid,.services-grid,.projects-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.github-cta,.contact-card,.footer-wrap{flex-direction:column;align-items:flex-start}.contact-card{padding:28px}.contact-card h2{font-size:32px}.contact-actions{width:100%}.contact-actions .btn{flex:1}.mini-points{grid-template-columns:1fr}.brand small{display:none}}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
