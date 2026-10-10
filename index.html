@@ -472,16 +472,32 @@
     </div>
   </footer>
 
-  <div class="modal" id="projectModal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-      <span class="section-kicker">PROJECT DETAILS</span>
-      <h2 id="modalTitle"></h2>
-      <p id="modalDescription"></p>
-      <a class="btn btn-primary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">View GitHub →</a>
-    </div>
+ <div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+
+  <div
+    class="modal-box"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle"
+  >
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+
+    <span class="section-kicker">PROJECT CASE STUDY</span>
+
+    <h2 id="modalTitle"></h2>
+
+    <div id="modalDescription" class="case-study-content"></div>
+
+    <button
+      class="btn btn-primary"
+      id="modalCloseAction"
+      type="button"
+    >
+      Close Details
+    </button>
   </div>
+</div>
 
   <script src="script.js"></script>
 </body>

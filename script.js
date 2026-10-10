@@ -62,56 +62,111 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
   };
-  $$(".project-details").forEach(btn => btn.addEventListener("click", () => {
-    modalTitle.textContent = btn.dataset.title;
-    modalDescription.textContent = btn.dataset.description;
+ const projectCaseStudies = {
+  "Multi-Service Cloud Deployment": {
+    overview: "Professional DevOps work involving a multi-service application deployment. Source code and internal implementation details remain private due to company confidentiality.",
+    implementation: [
+      "Containerized application services using Docker.",
+      "Configured Nginx reverse proxy routing.",
+      "Worked with SSL/HTTPS configuration.",
+      "Performed health checks and deployment troubleshooting.",
+      "Supported deployments across separate environments."
+    ],
+    stack: "Docker · Linux · Nginx · SSL/HTTPS · Cloud Infrastructure",
+    focus: "Deployment reliability, service availability and production troubleshooting."
+  },
+
+  "Ubuntu Server Deployment": {
+    overview: "Linux server setup and administration focused on application deployment and infrastructure operations.",
+    implementation: [
+      "Configured an Ubuntu server environment.",
+      "Worked with Docker containers and Nginx.",
+      "Configured SSL certificates for HTTPS.",
+      "Managed Python environments and server tooling.",
+      "Checked services, storage and deployment issues."
+    ],
+    stack: "Ubuntu · Docker · Nginx · SSL · Python",
+    focus: "Linux administration, service management and troubleshooting."
+  },
+
+  "AWS Cloud Infrastructure Deployment": {
+    overview: "Hands-on AWS infrastructure work involving cloud compute, storage, networking, access control and monitoring.",
+    implementation: [
+      "Worked with EC2 compute instances.",
+      "Used S3 for cloud storage tasks.",
+      "Worked with IAM permissions and access management.",
+      "Worked with VPC networking and infrastructure configuration.",
+      "Explored monitoring with AWS services."
+    ],
+    stack: "AWS EC2 · S3 · IAM · VPC · RDS · CloudWatch",
+    focus: "Cloud infrastructure, networking, access control and monitoring."
+  }
+};
+
+$$(".project-details").forEach(btn => btn.addEventListener("click", () => {
+    const title = btn.dataset.title;
+    const project = projectCaseStudies[title];
+
+    modalTitle.textContent = title;
+    modalDescription.replaceChildren();
+
+    if (!project) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = btn.dataset.description || "";
+      modalDescription.appendChild(paragraph);
+    } else {
+      const sections = [
+        ["Project Overview", project.overview],
+        ["Implementation & Work Performed", project.implementation],
+        ["Technical Stack", project.stack],
+        ["Engineering Focus", project.focus]
+      ];
+
+      sections.forEach(([heading, content]) => {
+        const section = document.createElement("section");
+        section.className = "case-study-section";
+
+        const h3 = document.createElement("h3");
+        h3.textContent = heading;
+        section.appendChild(h3);
+
+        if (Array.isArray(content)) {
+          const list = document.createElement("ul");
+
+          content.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            list.appendChild(li);
+          });
+
+          section.appendChild(list);
+        } else {
+          const paragraph = document.createElement("p");
+          paragraph.textContent = content;
+          section.appendChild(paragraph);
+        }
+
+        modalDescription.appendChild(section);
+      });
+    }
+
     modal.classList.add("open");
     modal.setAttribute("aria-hidden", "false");
-  }));
+})); 
+
+  $("#modalCloseAction")?.addEventListener("click", closeModal);
   $("#modalClose")?.addEventListener("click", closeModal);
   $(".modal-backdrop")?.addEventListener("click", closeModal);
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
-  // Service -> booking form
-  const serviceSelect = $("#serviceSelect");
-  $$(".service-book").forEach(btn => btn.addEventListener("click", () => {
-    serviceSelect.value = btn.dataset.service;
-    $("#booking").scrollIntoView({behavior:"smooth"});
-    setTimeout(() => serviceSelect.focus(), 600);
-  }));
-
-  // Don't allow past booking dates
-  const dateInput = $("#dateInput");
-  if (dateInput) {
-    const d = new Date();
-    const local = new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().split("T")[0];
-    dateInput.min = local;
-  }
-
-  // Booking request: mailto, no payment is collected here.
-  $("#bookingForm")?.addEventListener("submit", e => {
-    e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const data = Object.fromEntries(form.entries());
-    const subject = `Booking Request — ${data.service}`;
-    const body = [
-      `Hello Sebin,`,
-      ``,
-      `I would like to request a session/service.`,
-      ``,
-      `Name: ${data.name}`,
-      `Email: ${data.email}`,
-      `Company / Project: ${data.company || "Not provided"}`,
-      `Service: ${data.service}`,
-      `Preferred date: ${data.date}`,
-      `Preferred time: ${data.time}`,
-      ``,
-      `Requirement:`,
-      data.message,
-      ``,
-      `Please contact me to confirm availability, scope and final pricing.`
-    ].join("\n");
-   window.open("https://cal.com/sebin-tjubgh/cloud-consultation", "_blank");
-$("#formStatus").textContent = "Opening the Cal.com booking page...";
+   // Service buttons -> Cal.com booking page
+  $$(".service-book").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.open(
+        "https://cal.com/sebin-tjubgh/cloud-consultation",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    });
   });
-});
+ });
