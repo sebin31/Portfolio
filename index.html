@@ -41,57 +41,39 @@
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> CLOUD • DEVOPS • AUTOMATION • SCALABILITY</div>
-          <h1>Build. Deploy.<br><em>Automate.</em></h1>
-          <p class="hero-role">Cloud & DevOps Engineer</p>
-          <p class="hero-text">
-            I build, deploy and manage reliable cloud infrastructure, automate deployments,
-            and solve real-world infrastructure challenges using AWS, Azure, Linux and modern DevOps tools.
-          </p>
+   <section class="hero section" id="home">
+  <div class="container hero-editorial">
+    <div class="hero-meta">
+      <span>KERALA, INDIA</span>
+      <span>CLOUD · DEVOPS · INFRASTRUCTURE</span>
+    </div>
 
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#projects">View My Projects <span>→</span></a>
-            <a class="btn btn-secondary" href="#services">View Services</a>
-          </div>
+    <div class="hero-main">
+      <p class="hero-intro">Cloud &amp; DevOps Engineer</p>
 
-          <div class="hero-stats">
-            <div><strong>5+</strong><span>Projects</span></div>
-            <div><strong>AWS</strong><span>Certified</span></div>
-            <div><strong>∞</strong><span>Learning</span></div>
-          </div>
-        </div>
+      <h1>
+        Building reliable<br>
+        <span>cloud infrastructure.</span>
+      </h1>
 
-        <div class="hero-visual reveal">
-          <div class="terminal-card">
-            <div class="terminal-top">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="terminal-title">sebin@cloud: ~</span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="prompt">$</span> whoami</p>
-              <p class="output">sebin-stanley</p>
-              <p><span class="prompt">$</span> cat role.txt</p>
-              <p class="output">Cloud & DevOps Engineer</p>
-              <p><span class="prompt">$</span> ./deploy --stack cloud</p>
-              <p class="output success">✓ infrastructure ready</p>
-              <p><span class="prompt">$</span> echo "Always Learning..."<span class="cursor">▌</span></p>
-            </div>
-          </div>
+      <p class="hero-text">
+        I deploy and manage cloud infrastructure, containerized applications,
+        Linux servers and automated delivery workflows using AWS, Azure and
+        modern DevOps tools.
+      </p>
 
-          <div class="infra-orbit">
-            <div class="cloud-icon">☁</div>
-            <div class="orbit-card aws">AWS</div>
-            <div class="orbit-card azure">AZURE</div>
-            <div class="orbit-card docker">DOCKER</div>
-            <div class="orbit-card linux">LINUX</div>
-            <div class="orbit-card tf">TERRAFORM</div>
-          </div>
-        </div>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#projects">Explore Projects ↗</a>
+        <a class="btn btn-secondary" href="#contact">Get in Touch</a>
       </div>
-    </section>
+
+      <div class="hero-bottom">
+        <span>01 — SELECTED WORK</span>
+        <span>AWS · DOCKER · LINUX · TERRAFORM</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section soft" id="about">
   <div class="container two-col">
@@ -155,205 +137,113 @@
       </div>
     </section>
 
-    <section class="section soft" id="projects">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <span class="section-kicker">03 / PROJECTS</span>
-          <h2>Selected work</h2>
-          <p>Examples of cloud, server and DevOps work.</p>
+    
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-kicker">03 / PROJECTS</span>
+      <h2>Selected work</h2>
+      <p>Examples of cloud infrastructure, Linux administration and DevOps automation.</p>
+    </div>
+
+    <div class="filter-bar reveal">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="cloud">Cloud</button>
+      <button class="filter" data-filter="devops">DevOps</button>
+      <button class="filter" data-filter="linux">Linux</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal" data-category="cloud devops">
+        <div class="project-top">
+          <span class="project-number">01</span>
+          <span class="tag">Cloud</span>
         </div>
-
-        <div class="filter-bar reveal">
-          <button class="filter active" data-filter="all">All</button>
-          <button class="filter" data-filter="cloud">Cloud</button>
-          <button class="filter" data-filter="devops">DevOps</button>
-          <button class="filter" data-filter="linux">Linux</button>
+        <h3>Multi-Service Cloud Deployment</h3>
+        <p>Professional DevOps work involving multi-service application deployment, Docker containerization, Nginx reverse proxy, SSL/HTTPS, health checks and production troubleshooting.</p>
+        <div class="project-stack">
+          <span>Docker</span><span>Nginx</span><span>Linux</span><span>Cloud</span><span>CI/CD</span>
         </div>
+        <button class="text-btn project-details"
+          data-title="Multi-Service Cloud Deployment"
+          data-description="Professional DevOps work involving multi-service application deployment, Docker containerization, Nginx reverse proxying, SSL/HTTPS, health checks, environment-specific services and production troubleshooting. Source code and internal implementation details are not publicly available due to company confidentiality.">
+          View details →
+        </button>
+      </article>
 
-        <div class="projects-grid">
-
-  <!-- 01 — Multi-Service Cloud Deployment -->
-  <article class="project-card reveal" data-category="cloud devops">
-    <div class="project-top">
-      <span class="project-number">01</span>
-      <span class="tag">Cloud</span>
-    </div>
-
-    <h3>Multi-Service Cloud Deployment</h3>
-
-    <p>
-      Professional DevOps work involving multi-service application deployment,
-      Docker containerization, Nginx reverse proxy, SSL/HTTPS, health checks
-      and production troubleshooting.
-    </p>
-
-    <div class="project-stack">
-      <span>Docker</span>
-      <span>Nginx</span>
-      <span>Linux</span>
-      <span>Cloud</span>
-      <span>CI/CD</span>
-    </div>
-
-    <button
-      class="text-btn project-details"
-      data-title="Multi-Service Cloud Deployment"
-      data-description="Professional DevOps work involving multi-service application deployment, Docker containerization, Nginx reverse proxying, SSL/HTTPS, health checks, environment-specific services and production troubleshooting. Source code and internal implementation details are not publicly available due to company confidentiality."
-    >
-      View details →
-    </button>
-  </article>
-
-
-  <!-- 02 — Ubuntu Server Deployment -->
-  <article class="project-card reveal" data-category="linux devops">
-    <div class="project-top">
-      <span class="project-number">02</span>
-      <span class="tag">Linux</span>
-    </div>
-
-    <h3>Ubuntu Server Deployment</h3>
-
-    <p>
-      Configured Linux infrastructure with Docker, Nginx, SSL, Python tooling,
-      disks and service management.
-    </p>
-
-    <div class="project-stack">
-      <span>Ubuntu</span>
-      <span>Docker</span>
-      <span>Nginx</span>
-      <span>SSL</span>
-    </div>
-
-    <button
-      class="text-btn project-details"
-      data-title="Ubuntu Server Deployment"
-      data-description="Server setup and operational work including storage, Docker, Nginx, SSL certificates, Python environments, service checks and deployment troubleshooting."
-    >
-      View details →
-    </button>
-  </article>
-
-
-  <!-- 03 — AWS Cloud Infrastructure -->
-  <article class="project-card reveal" data-category="cloud">
-    <div class="project-top">
-      <span class="project-number">03</span>
-      <span class="tag">AWS</span>
-    </div>
-
-    <h3>AWS Cloud Infrastructure Deployment</h3>
-
-    <p>
-      Hands-on AWS infrastructure using core services for compute, storage,
-      networking, security and monitoring.
-    </p>
-
-    <div class="project-stack">
-      <span>EC2</span>
-      <span>S3</span>
-      <span>IAM</span>
-      <span>VPC</span>
-    </div>
-
-    <button
-      class="text-btn project-details"
-      data-title="AWS Cloud Infrastructure Deployment"
-      data-description="Hands-on AWS work across EC2, S3, IAM, VPC, RDS and CloudWatch with a focus on practical deployment and infrastructure fundamentals."
-    >
-      View details →
-    </button>
-  </article>
-
-
-  <!-- 04 — Mini DEV -->
-  <article class="project-card reveal" data-category="devops">
-    <div class="project-top">
-      <span class="project-number">04</span>
-      <span class="tag">DevOps</span>
-    </div>
-
-    <h3>Mini DEV — Full-Stack DevOps Environment</h3>
-
-    <p>
-      Containerized Angular, ASP.NET Core and PostgreSQL stack on AWS EC2,
-      with a self-hosted GitHub Actions pipeline that runs health checks
-      and rolls back automatically. The infrastructure is recreated in
-      Terraform and mirrored on Kubernetes (Minikube).
-    </p>
-
-    <div class="project-stack">
-      <span>Docker</span>
-      <span>Terraform</span>
-      <span>Kubernetes</span>
-      <span>GitHub Actions</span>
-      <span>AWS</span>
-    </div>
-
-    <div class="project-links">
-      <a
-        class="text-btn"
-        href="https://github.com/sebin31/mini-dev"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Main Repo →
-      </a>
-
-      <a
-        class="text-btn"
-        href="https://github.com/sebin31/mini-dev-k8s"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Kubernetes Repo →
-      </a>
-    </div>
-  </article>
-
-
-  <!-- 05 — MyWeatherApi -->
-  <article class="project-card reveal" data-category="cloud devops">
-    <div class="project-top">
-      <span class="project-number">05</span>
-      <span class="tag">DevOps</span>
-    </div>
-
-    <h3>MyWeatherApi</h3>
-
-    <p>
-      .NET Web API containerized with Docker and deployed to AWS EC2 through
-      a GitHub Actions CI/CD pipeline, with an Nginx reverse proxy and
-      an Elastic IP.
-    </p>
-
-    <div class="project-stack">
-      <span>.NET</span>
-      <span>Docker</span>
-      <span>GitHub Actions</span>
-      <span>AWS EC2</span>
-      <span>Nginx</span>
-    </div>
-
-    <a
-      class="text-btn"
-      href="https://github.com/sebin31/myweatherapi"
-      target="_blank"
-      rel="noreferrer"
-    >
-      View Project →
-    </a>
-  </article>
-
-</div>
-
-        <div class="github-cta reveal">
-          <span>More projects and code are available on GitHub.</span>
-          <a class="btn btn-secondary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">Open GitHub →</a>
+      <article class="project-card reveal" data-category="linux devops">
+        <div class="project-top">
+          <span class="project-number">02</span>
+          <span class="tag">Linux</span>
         </div>
-      </div>
-    </section>
+        <h3>Ubuntu Server Deployment</h3>
+        <p>Configured Linux infrastructure with Docker, Nginx, SSL, Python tooling, disk management and service troubleshooting.</p>
+        <div class="project-stack">
+          <span>Ubuntu</span><span>Docker</span><span>Nginx</span><span>SSL</span>
+        </div>
+        <button class="text-btn project-details"
+          data-title="Ubuntu Server Deployment"
+          data-description="Server setup and operational work including storage, Docker, Nginx, SSL certificates, Python environments, service checks and deployment troubleshooting.">
+          View details →
+        </button>
+      </article>
+
+      <article class="project-card reveal" data-category="cloud">
+        <div class="project-top">
+          <span class="project-number">03</span>
+          <span class="tag">AWS</span>
+        </div>
+        <h3>AWS Cloud Infrastructure Deployment</h3>
+        <p>Hands-on AWS infrastructure using core services for compute, storage, networking, security and monitoring.</p>
+        <div class="project-stack">
+          <span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span>
+        </div>
+        <button class="text-btn project-details"
+          data-title="AWS Cloud Infrastructure Deployment"
+          data-description="Hands-on AWS work across EC2, S3, IAM, VPC, RDS and CloudWatch with a focus on practical deployment and infrastructure fundamentals.">
+          View details →
+        </button>
+      </article>
+
+      <article class="project-card reveal" data-category="devops">
+        <div class="project-top">
+          <span class="project-number">04</span>
+          <span class="tag">DevOps</span>
+        </div>
+        <h3>Mini DEV — Full-Stack DevOps Environment</h3>
+        <p>Containerized Angular, ASP.NET Core and PostgreSQL stack on AWS EC2, with a self-hosted GitHub Actions pipeline, health checks, automatic rollback, Terraform and a Kubernetes deployment using Minikube.</p>
+        <div class="project-stack">
+          <span>Docker</span><span>Terraform</span><span>Kubernetes</span><span>GitHub Actions</span><span>AWS</span>
+        </div>
+        <div class="project-links">
+          <a class="text-btn" href="https://github.com/sebin31/mini-dev" target="_blank" rel="noreferrer">Main Repo →</a>
+          <a class="text-btn" href="https://github.com/sebin31/mini-dev-k8s" target="_blank" rel="noreferrer">Kubernetes Repo →</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="cloud devops">
+        <div class="project-top">
+          <span class="project-number">05</span>
+          <span class="tag">DevOps</span>
+        </div>
+        <h3>MyWeatherApi</h3>
+        <p>.NET Web API containerized with Docker and deployed to AWS EC2 through a GitHub Actions CI/CD pipeline, with an Nginx reverse proxy and an Elastic IP.</p>
+        <div class="project-stack">
+          <span>.NET</span><span>Docker</span><span>GitHub Actions</span><span>AWS EC2</span><span>Nginx</span>
+        </div>
+        <a class="text-btn" href="https://github.com/sebin31/myweatherapi" target="_blank" rel="noreferrer">View Project →</a>
+      </article>
+
+    </div>
+
+    <div class="github-cta reveal">
+      <span>More projects and code are available on GitHub.</span>
+      <a class="btn btn-secondary" href="https://github.com/sebin31" target="_blank" rel="noreferrer">Open GitHub →</a>
+    </div>
+  </div>
+</section>
+
 
     <section class="section" id="services">
       <div class="container">
@@ -422,6 +312,29 @@
             <button class="btn btn-primary full service-book" data-service="Cloud Consultation">Book a Session</button>
           </article>
         </div>
+
+        <div class="estimator reveal" id="estimator">
+        <div class="estimator-head">
+          <h3>Build your estimate</h3>
+          <p>Pick what you need to see the starting total.</p>
+        </div>
+        <div class="estimator-options" role="group" aria-label="Choose services">
+          <button type="button" class="est-option" aria-pressed="false" data-service="AWS Cloud Setup" data-price="30">AWS Cloud Setup <span>$30</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Azure VM Setup" data-price="30">Azure VM Setup <span>$30</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Docker Deployment" data-price="25">Docker Deployment <span>$25</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Linux Server Setup" data-price="25">Linux Server Setup <span>$25</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Nginx + SSL Setup" data-price="20">Nginx + SSL Setup <span>$20</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="CI/CD Pipeline" data-price="40">CI/CD Pipeline <span>$40</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Terraform Infrastructure" data-price="50">Terraform Infrastructure <span>$50</span></button>
+          <button type="button" class="est-option" aria-pressed="false" data-service="Cloud Consultation (1 hr)" data-price="15">Cloud Consultation (1 hr) <span>$15</span></button>
+        </div>
+        <div class="estimator-summary" aria-live="polite">
+          <div class="estimator-total"><span>Starting from</span><strong id="estTotal">$0</strong></div>
+          <p class="estimator-list" id="estList">Nothing selected yet.</p>
+          <a class="btn btn-primary" id="estBook" href="https://cal.com/sebin-tjubgh/cloud-consultation" target="_blank" rel="noreferrer">Book with this selection</a>
+        </div>
+        <small class="price-note">Sum of starting prices. The final quote depends on scope, and we agree it before any work starts.</small>
+      </div>
 
         <div class="pricing-note reveal">
           <strong>Important:</strong> Service prices are starting prices. Your final quote will be discussed after understanding the scope, infrastructure, urgency and complexity of the project.

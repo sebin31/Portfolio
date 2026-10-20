@@ -62,6 +62,59 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
   };
+const caseStudyFlows = {
+  "Multi-Service Cloud Deployment": [
+    {label: "Client", note: "Browser or API consumer"},
+    {label: "Nginx", note: "Reverse proxy and SSL/HTTPS"},
+    {label: "Docker services", note: "Application containers per environment"},
+    {label: "Health checks", note: "Service status and troubleshooting"}
+  ],
+  "Ubuntu Server Deployment": [
+    {label: "Client", note: "Browser or API consumer"},
+    {label: "Nginx", note: "HTTPS with SSL certificates"},
+    {label: "Docker", note: "Containerized applications"},
+    {label: "Ubuntu server", note: "Storage, Python environments, services"}
+  ],
+  "AWS Cloud Infrastructure Deployment": [
+    {label: "VPC", note: "Network layout"},
+    {label: "EC2", note: "Compute"},
+    {label: "S3 and RDS", note: "Storage and database"},
+    {label: "IAM and CloudWatch", note: "Access control and monitoring"}
+  ]
+};
+
+// Fill these in to add Problem and Result sections to a popup. Empty ones are skipped.
+const caseStudyExtras = {
+  "Multi-Service Cloud Deployment": { problem: "", result: "" },
+  "Ubuntu Server Deployment": { problem: "", result: "" },
+  "AWS Cloud Infrastructure Deployment": { problem: "", result: "" }
+};
+
+const buildFlow = steps => {
+  const wrap = document.createElement("div");
+  wrap.className = "flow";
+  wrap.setAttribute("role", "img");
+  wrap.setAttribute("aria-label", "Architecture: " + steps.map(s => s.label).join(", then "));
+  steps.forEach((step, i) => {
+    if (i > 0) {
+      const arrow = document.createElement("span");
+      arrow.className = "flow-arrow";
+      arrow.setAttribute("aria-hidden", "true");
+      arrow.textContent = "\u2192";
+      wrap.appendChild(arrow);
+    }
+    const node = document.createElement("div");
+    node.className = "flow-node";
+    const strong = document.createElement("strong");
+    strong.textContent = step.label;
+    const small = document.createElement("small");
+    small.textContent = step.note;
+    node.append(strong, small);
+    wrap.appendChild(node);
+  });
+  return wrap;
+};
+
  const projectCaseStudies = {
   "Multi-Service Cloud Deployment": {
     overview: "Professional DevOps work involving a multi-service application deployment. Source code and internal implementation details remain private due to company confidentiality.",
@@ -115,11 +168,16 @@ $$(".project-details").forEach(btn => btn.addEventListener("click", () => {
       paragraph.textContent = btn.dataset.description || "";
       modalDescription.appendChild(paragraph);
     } else {
+      const flow = caseStudyFlows[title];
+      const extra = caseStudyExtras[title] || {};
       const sections = [
+        ...(extra.problem ? [["Problem", extra.problem]] : []),
         ["Project Overview", project.overview],
+        ...(flow ? [["Architecture", {flow}]] : []),
         ["Implementation & Work Performed", project.implementation],
         ["Technical Stack", project.stack],
-        ["Engineering Focus", project.focus]
+        ["Engineering Focus", project.focus],
+        ...(extra.result ? [["Result", extra.result]] : [])
       ];
 
       sections.forEach(([heading, content]) => {
@@ -130,7 +188,9 @@ $$(".project-details").forEach(btn => btn.addEventListener("click", () => {
         h3.textContent = heading;
         section.appendChild(h3);
 
-        if (Array.isArray(content)) {
+        if (content && content.flow) {
+          section.appendChild(buildFlow(content.flow));
+        } else if (Array.isArray(content)) {
           const list = document.createElement("ul");
 
           content.forEach(item => {
@@ -158,6 +218,28 @@ $$(".project-details").forEach(btn => btn.addEventListener("click", () => {
   $("#modalClose")?.addEventListener("click", closeModal);
   $(".modal-backdrop")?.addEventListener("click", closeModal);
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+   // Service estimate
+  const estOptions = $$(".est-option");
+  if (estOptions.length) {
+    const estTotal = $("#estTotal");
+    const estList = $("#estList");
+    const estBook = $("#estBook");
+    const calUrl = "https://cal.com/sebin-tjubgh/cloud-consultation";
+    const updateEstimate = () => {
+      const picked = estOptions.filter(b => b.getAttribute("aria-pressed") === "true");
+      const total = picked.reduce((sum, b) => sum + Number(b.dataset.price), 0);
+      const names = picked.map(b => b.dataset.service).join(", ");
+      estTotal.textContent = `$${total}`;
+      estList.textContent = picked.length ? names : "Nothing selected yet.";
+      estBook.href = picked.length ? `${calUrl}?notes=${encodeURIComponent("Interested in: " + names)}` : calUrl;
+    };
+    estOptions.forEach(btn => btn.addEventListener("click", () => {
+      btn.setAttribute("aria-pressed", String(btn.getAttribute("aria-pressed") !== "true"));
+      updateEstimate();
+    }));
+    updateEstimate();
+  }
 
    // Service buttons -> Cal.com booking page
   $$(".service-book").forEach(btn => {
